@@ -5,13 +5,15 @@ What is the largest prime factor of the number 600851475143 ?"""
 
 def is_prime(n):
     for _ in range(2, int(n ** 0.5) + 1):
+        # Only check to the square root of a number cos the max product for a number is sqrt * sqrt
         if n % _ == 0:
             return False
     return True and n != 1
 
 limit = 600851475143
 multiples = [0]
-for _ in range(1, int(limit ** 0.5)):
+for _ in range(1, int(limit ** 0.5) + 1):
+    # Apply same square root trick
     if limit % _ == 0:
         if is_prime(_):
             multiples.append(_)

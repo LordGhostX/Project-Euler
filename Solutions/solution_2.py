@@ -10,6 +10,7 @@ fib = []
 
 limit = 4000000
 while first + second <= limit:
+    # Classical Fibonacci solution
     third = first + second
     fib.append(third)
     first = second
