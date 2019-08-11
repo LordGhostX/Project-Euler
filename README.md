@@ -6,4 +6,4 @@ Project Euler is a series of challenging mathematical/computer programming probl
 
 You can find more about it [here](https://projecteuler.net)
 
-![project euler homepage](projecteuler.jpg)
+![project euler homepage](projecteuler.JPG)
