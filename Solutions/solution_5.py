@@ -26,6 +26,7 @@ while True:
     if valid:
         break
     else:
+        # Keep adding 2 because the answer can only be an even number; we know it's even because we have even numbers in our set and even numbers only enter even numbers
         curr_num += 2
 
 print(curr_num)
