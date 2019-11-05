@@ -103,5 +103,11 @@ numbers = """37107287533902102798797998220837590246510135740250
 20849603980134001723930671666823555245252804609722
 53503534226472524250874054075591789781264330331690""".split("\n")
 
-numbers = list(map(int, "".join(numbers)))
-print(sum(numbers))
+numbers = list("".join(numbers))
+
+sets_of_100 = []
+for _ in range(0, len(numbers), 100):
+    sets_of_100.append(int("".join(numbers[_:_ + 100])))
+
+first_10 = str(sum(sets_of_100))[:10]
+print(first_10)
